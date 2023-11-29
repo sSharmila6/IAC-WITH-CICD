@@ -29,8 +29,8 @@ steps:
   args: 
   - '-c'
   - |
-      if [ -d "IAC-WITH-CICD/asset/gcp_landingzone/src/iac" ]; then
-        cd IAC-WITH-CICD/asset/gcp_landingzone/src/iac
+      if [ -d "asset/gcp_landingzone/src/iac" ]; then
+        cd asset/gcp_landingzone/src/iac
         terraform init
       else
         echo "This is not working directory."
@@ -43,8 +43,8 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ -d "IAC-WITH-CICD/asset/gcp_landingzone/src/iac" ]; then
-        cd IAC-WITH-CICD/asset/gcp_landingzone/src/iac
+      if [ -d "asset/gcp_landingzone/src/iac" ]; then
+        cd asset/gcp_landingzone/src/iac
         terraform validate
       else
         echo "This is not working directory."
@@ -58,8 +58,8 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ -d "IAC-WITH-CICD/asset/gcp_landingzone/src/iac" ]; then
-        cd IAC-WITH-CICD/asset/gcp_landingzone/src/iac
+      if [ -d "asset/gcp_landingzone/src/iac" ]; then
+        cd asset/gcp_landingzone/src/iac
         terraform plan
       else
         echo "This is not working directory."
@@ -73,8 +73,8 @@ steps:
   args: 
   - '-c'
   - | 
-      if [ -d "IAC-WITH-CICD/asset/gcp_landingzone/src/iac" ]; then
-        cd IAC-WITH-CICD/asset/gcp_landingzone/src/iac   
+      if [ -d "asset/gcp_landingzone/src/iac" ]; then
+        cd asset/gcp_landingzone/src/iac   
         terraform apply -auto-approve
       else
        

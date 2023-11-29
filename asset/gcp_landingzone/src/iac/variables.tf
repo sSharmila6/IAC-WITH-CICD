@@ -19,9 +19,9 @@ variable "firewall_name" {
   type = list(string)
 }
 
- variable "key" {
-   type = string
- }
+ //variable "key" {
+  // type = string
+ //}
 variable "auto_create_subnetworks" {
   type = bool
 }

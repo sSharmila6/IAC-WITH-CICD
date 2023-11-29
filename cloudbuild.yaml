@@ -67,19 +67,19 @@ steps:
 # [END tf-plan]
 
 # [START tf-apply]
-- id: 'tf apply'
-  name: 'hashicorp/terraform:1.0.0'
-  entrypoint: 'sh'
-  args: 
-  - '-c'
-  - | 
-      if [ -d "asset/gcp_landingzone/src/iac" ]; then
-        cd asset/gcp_landingzone/src/iac   
-        terraform apply -auto-approve
-      else
+#- id: 'tf apply'
+ # name: 'hashicorp/terraform:1.0.0'
+ # entrypoint: 'sh'
+ # args: 
+ # - '-c'
+ # - | 
+  #    if [ -d "asset/gcp_landingzone/src/iac" ]; then
+   #     cd asset/gcp_landingzone/src/iac   
+    #    terraform apply -auto-approve
+     # else
        
-         echo "Branch '$BRANCH_NAME' does not represent an oficial environment."
-      fi
+      #   echo "Branch '$BRANCH_NAME' does not represent an oficial environment."
+     # fi
 # [END tf-apply]      
 
 #  [START tf-destroy]

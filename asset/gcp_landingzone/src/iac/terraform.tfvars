@@ -1,5 +1,5 @@
 project_id = "shasha-project"
-key        = "credentials.json"
+#key        = "credentials.json"
 
 #VPC_network
 vpc_name                = ["hub", "spoke1", "spoke2"]

@@ -14,7 +14,7 @@ private_ip_google_access = true
 peer1 = "peering1"
 peer2 = "peering2"
 #firewall
-firewall_name = ["firewall1", "firewall2", "firewall3"]
+firewall_name = ["firewall1", "firewall2", "firewall4"]
 protocol      = "tcp"
 source_range  = "0.0.0.0/0"
 ports                 = ["255", "80", "443" ,"22"]
